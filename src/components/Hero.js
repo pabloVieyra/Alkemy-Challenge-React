@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import { useFetch } from "../hooks_Personalizados/UseFetch";
 import { Cargando } from "./Cargando";
 
+
 export const Hero = () => {
   const { heroId } = useParams();
 
@@ -12,15 +13,17 @@ export const Hero = () => {
   const { data, loading } = useFetch(url);
 
   return (
-    <div className="container">
+    <div className="container ">
       {loading ? (
-        <Cargando></Cargando>
+      
+        <Cargando ></Cargando>
+      
       ) : (
-        <div className="card-hero mt-5 animate__animated animate__fadeIn animate__slow">
+        <div >
           <div className="name">
             <h1>{data.name}</h1>
           </div>
-          <div className="hero-container mt-4 mb-3">
+          <div className=" mt-4 mb-3">
             <div className="image">
               <img src={data.image.url} alt="..." />
             </div>

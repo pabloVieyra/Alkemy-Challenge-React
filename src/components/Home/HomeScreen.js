@@ -8,6 +8,7 @@ export const HomeScreen = () => {
     <div className="home-screen animate__animated animate__fadeIn animate__slow">
             
       <div className="jumbotron jumbotron-fluid mt-5">
+      
         <div className="container">
         <Button_P />
           <h1 className="display-10">

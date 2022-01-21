@@ -4,9 +4,9 @@ import { UseForm } from "../../hooks_Personalizados/UseForm";
 import Swal from "sweetalert2";
 import { useDispatch } from "react-redux";
 import axios from "axios";
-
-
 import { types } from "../../reducers/types";
+import Card from '@mui/material/Card';
+import { CardActionArea,Button } from "@mui/material";
 
 export const LoginScreen = () => {
   
@@ -42,6 +42,7 @@ export const LoginScreen = () => {
 
   return (
     <div className="m-0 vh-100 row justify-content-center align-items-center">
+      <Card sx={{ fontSize: 20,width: '70%' , background:'#6a4f4b'}}  >
     <div className="col-auto p-5 text-center" >
       <h2>Iniciar sesión</h2>
       <Form className="form" onSubmit={handleSubmit}>
@@ -67,11 +68,13 @@ export const LoginScreen = () => {
             value={password}
           />
         </FormGroup>
-        <button className="btn btn-success">
+        <button className="btn btn-success "  margin='2%'>
           Ingresar
         </button>
+        
       </Form>
     </div>
+    </Card>
     </div>
   );
 };
