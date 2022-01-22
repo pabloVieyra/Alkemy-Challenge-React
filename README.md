@@ -10,7 +10,7 @@ Aplicación para construir un equipo de héroes..
 
  ## inicio de sesión:
  #### Usuario: challenge@alkemy.org
- #### Contraseña: reaccionar
+ #### Contraseña: react
  
  ## My GitHub:https://github.com/pabloVieyra
  ## My Linkedin:https://www.linkedin.com/in/pablo-vieyra/
