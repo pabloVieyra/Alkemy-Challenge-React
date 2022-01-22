@@ -17,7 +17,7 @@ export const LoginScreen = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post('http://challenge-react.alkemy.org/', {
+      .post(process.env.REACT_APP_LOGIN_URL, {
         email,
         password,
       })
