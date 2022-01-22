@@ -8,7 +8,7 @@ Aplicación para construir un equipo de héroes..
    #### .No puede agregar más de 3 miembros del mismo orden ("bueno" / "malo")
    #### .Puedes ver debajo de las cartas de tu equipo los powerstats de los mismos, ordenados de mayor a menor según el poder de sus habilidades
 
- ## inicio de sesión:
+ ## Inicio de sesión:
  #### Usuario: challenge@alkemy.org
  #### Contraseña: react
  
