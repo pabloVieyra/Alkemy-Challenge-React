@@ -92,11 +92,10 @@ export const SecundaryCard = ({ hero }) => {
           </div>
         </div>
       </div>
-      <div className="btn-container-mini-card">
-        <button
+      <button
           type="button"
           className="btn btn-primary btn-mini-card"
-          style={{ textDecoration: "underline" }}
+          style={{ textDecoration: "underline" ,background:'#666666',borderColor:'#666666'}}
           id="TooltipAdd"
           onClick={handleSelect}
         >
@@ -110,7 +109,6 @@ export const SecundaryCard = ({ hero }) => {
         >
           Añadir Heroe
         </Tooltip>
-      </div>
     </div>
   );
 };

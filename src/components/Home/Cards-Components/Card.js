@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { Tooltip } from "reactstrap";
 import { types } from "../../../reducers/types";
+import './Card.css'
 
 export const Card = ({ hero }) => {
   const [tooltipInfoOpen, setTooltipInfoOpen] = useState(false);
@@ -31,11 +32,12 @@ export const Card = ({ hero }) => {
             ? `bad`
             : ``
         }`}
+        
       >
         <img src={hero.image.url} className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title">{hero.name}</h5>
-          <ul className="ps-0 list">
+          <ul className="ps-0 list" style={{margin:'10%'}}>
             <li>Combate: {hero.powerstats.combat}</li>
             <li>Durabilidad: {hero.powerstats.durability}</li>
             <li>Inteligencia: {hero.powerstats.intelligence}</li>
@@ -65,6 +67,7 @@ export const Card = ({ hero }) => {
             className="btn btn-danger btn-delete"
             style={{
               textDecoration: "underline",
+              margin:'5%'
             }}
             id="TooltipDelete"
             onClick={handleDelete}

@@ -6,7 +6,7 @@ import { useDispatch } from "react-redux";
 import axios from "axios";
 import { types } from "../../reducers/types";
 import Card from '@mui/material/Card';
-import { CardActionArea,Button } from "@mui/material";
+
 
 export const LoginScreen = () => {
   
@@ -42,12 +42,12 @@ export const LoginScreen = () => {
 
   return (
     <div className="m-0 vh-100 row justify-content-center align-items-center">
-      <Card sx={{ fontSize: 20,width: '70%' , background:'#6a4f4b'}}  >
+      <Card sx={{ fontSize: 20,width: '70%' , backgroundImage:'url(https://p4.wallpaperbetter.com/wallpaper/162/161/68/superman-dc-comics-minimalist-superman-logo-wallpaper-preview.jpg)',backgroundSize:'cover'} } >
     <div className="col-auto p-5 text-center" >
-      <h2>Iniciar sesión</h2>
+      <h2 style={{color:'white'}}>Iniciar sesión</h2>
       <Form className="form" onSubmit={handleSubmit}>
-        <FormGroup>
-          <Label for="exampleEmail">Nombre de Usuario</Label>
+        <FormGroup style={{margin:"2%",textAlign:'left'}}>
+          <Label for="exampleEmail" style={{color:'white'}}>Nombre de Usuario</Label>
           <Input
             type="email"
             name="email"
@@ -57,8 +57,8 @@ export const LoginScreen = () => {
             value={email}
           />
         </FormGroup>
-        <FormGroup>
-          <Label for="examplePassword">Contraseña</Label>
+        <FormGroup style={{margin:"2%",textAlign:'left'}}>
+          <Label for="examplePassword" style={{color:'white'}}>Contraseña</Label>
           <Input
             type="password"
             name="password"
@@ -68,7 +68,7 @@ export const LoginScreen = () => {
             value={password}
           />
         </FormGroup>
-        <button className="btn btn-success "  margin='2%'>
+        <button className="btn  "  style={{margin:"1%",color:'white',background:'#666666'}}>
           Ingresar
         </button>
         

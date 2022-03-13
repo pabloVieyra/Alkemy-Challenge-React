@@ -45,7 +45,9 @@ export const Busqueda = (props) => {
                   )
               )
             ) : (
+              <div style={{marginLeft:'45%',marginRight:'45%',marginBottom:'10%'}}>
                <Cargando  /> 
+               </div>
             )}
           </div>
         </ModalBody>
